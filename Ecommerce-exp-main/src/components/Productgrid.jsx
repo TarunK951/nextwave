@@ -6,16 +6,22 @@ import "./mobile.css";
 
 const ProductGrid = ({ selectedCategories, selectedSort }) => {
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
       .then((data) => {
-        const enriched = data.map((product, i) => ({
+        const enriched = data.map((product) => ({
           ...product,
           liked: false,
         }));
         setProducts(enriched);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to fetch products", err);
+        setLoading(false);
       });
   }, []);
 
@@ -46,10 +52,12 @@ const ProductGrid = ({ selectedCategories, selectedSort }) => {
     }
   });
 
+  if (loading) return <div className="loader">Loading...</div>;
+
   return (
     <section className="product-grid">
       {sorted.map((product, index) => (
-        <div key={index} className="product-card">
+        <div key={product.id} className="product-card">
           <div className="image-wrapper">
             <img src={product.image} alt={product.title} />
           </div>
