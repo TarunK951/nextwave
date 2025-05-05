@@ -1,5 +1,4 @@
 body {
-  font-family: "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -139,120 +138,72 @@ body {
   background-color: #888;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .top-bar {
-    flex-direction: column;
-    padding: 10px 16px;
-    gap: 8px;
+    padding-left: 10px; /* Reduced left padding */
+    padding-right: 10px; /* Reduced right padding */
+    flex-direction: column; /* Stack top messages vertically */
+    align-items: center; /* Center items */
   }
 
   .top-message {
-    font-size: 10px;
-  }
-
-  .icon-logo {
-    width: 12px;
-    height: 12px;
-    margin-right: 8px;
+    margin-bottom: 5px; /* Add some space between stacked messages */
   }
 
   .main-header {
-    padding: 10px 16px;
-    flex-wrap: wrap;
+    padding: 10px 15px; /* Further reduced padding */
   }
 
   .header-center {
-    font-size: 24px;
-    padding-left: 0;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  .main-logo {
-    height: 25px;
-    width: 25px;
+    padding-left: 0; /* Remove left padding */
   }
 
   .header-right {
-    gap: 15px;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .header-icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .lang-select {
-    font-size: 12px;
-  }
-
-  .arrow-icon {
-    width: 6px;
-    height: 6px;
+    gap: 5px; /* Further reduced gap */
   }
 
   .nav-bar ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px 0;
-    justify-content: center;
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center navigation items */
+    gap: 10px; /* Reduced gap for stacked items */
+    padding: 10px; /* Adjust padding */
   }
 
   .nav-bar li {
-    font-size: 14px;
-    padding-top: 0;
+    padding-top: 0; /* Ensure no extra top padding */
+    margin-bottom: 5px; /* Adjust bottom margin */
+    font-size: 18px; /* Slightly larger for better touch */
+  }
+
+  .header-right .login-link,
+  .header-right .signup-link {
+    margin-left: 5px; /* Maintain spacing */
   }
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
-  .top-bar {
-    padding: 8px 20px;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .top-message {
-    font-size: 11px;
-  }
-
+/* Very small screens */
+@media (max-width: 480px) {
   .main-header {
-    padding: 15px 30px;
+    flex-direction: column; /* Stack logo and right elements */
+    align-items: center;
+    text-align: center;
   }
 
   .header-center {
-    font-size: 30px;
-    padding-left: 100px;
-  }
-
-  .main-logo {
-    height: 30px;
-    width: 30px;
+    margin-bottom: 10px;
   }
 
   .header-right {
-    gap: 18px;
-  }
-
-  .header-icon {
-    width: 22px;
-    height: 22px;
-  }
-
-  .lang-select {
-    font-size: 13px;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 5px;
   }
 
   .nav-bar ul {
-    gap: 30px;
-    padding: 12px 0;
+    padding: 18px;
   }
 
   .nav-bar li {
     font-size: 16px;
-    padding-top: 20px;
   }
 }

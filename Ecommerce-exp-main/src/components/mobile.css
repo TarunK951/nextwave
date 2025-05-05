@@ -1,0 +1,263 @@
+/* Mobile view kosam CSS (≤600px) - Screenshot prakaram adjust chestunnam */
+@media (max-width: 600px) {
+  /* Header adjustments - Top bar ni vertical ga stack cheyyali */
+  .top-bar {
+    flex-direction: column;
+    padding: 10px 16px;
+    gap: 8px;
+  }
+
+  .top-message {
+    font-size: 10px;
+  }
+
+  .icon-logo {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+  }
+
+  /* Main header ni compact cheyyali */
+  .main-header {
+    padding: 10px 16px;
+    flex-wrap: wrap;
+  }
+
+  .header-center {
+    font-size: 24px;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .main-logo {
+    height: 25px;
+    width: 25px;
+  }
+
+  .header-right {
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .lang-select {
+    font-size: 12px;
+  }
+
+  .arrow-icon {
+    width: 6px;
+    height: 6px;
+  }
+
+  /* Nav bar ni center chesi, font size tagginchali */
+  .nav-bar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .nav-bar li {
+    font-size: 14px;
+    padding-top: 0;
+  }
+
+  /* Top bar adjustments - Filter and sort ni compact cheyyali */
+  .topbar {
+    flex-direction: column;
+    height: auto;
+    padding: 8px 12px;
+    gap: 10px;
+  }
+
+  .topbar-left-group {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .topbar-left {
+    font-size: 14px;
+  }
+
+  .topbar-middle {
+    padding-left: 0;
+    font-size: 12px;
+  }
+
+  .hide-filter-link {
+    font-size: 11px;
+    gap: 3px;
+  }
+
+  .topbar-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .sort-trigger span {
+    font-size: 12px;
+  }
+
+  .sort-menu {
+    width: 150px;
+    left: auto;
+    right: 0;
+  }
+
+  .sort-option {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  /* Product grid ni single column cheyyali */
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .product-card {
+    border-radius: 4px;
+  }
+
+  .image-wrapper img {
+    max-height: 80%;
+  }
+
+  .product-details {
+    padding: 8px 10px 25px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .subtext {
+    font-size: 12px;
+  }
+
+  .heart-icon {
+    width: 18px;
+    height: 18px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+/* Tablet view kosam CSS (601px–1024px) - Mobile kanna konchem spacious */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Header adjustments */
+  .top-bar {
+    padding: 8px 20px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .top-message {
+    font-size: 11px;
+  }
+
+  .main-header {
+    padding: 15px 30px;
+  }
+
+  .header-center {
+    font-size: 30px;
+    padding-left: 100px;
+  }
+
+  .main-logo {
+    height: 30px;
+    width: 30px;
+  }
+
+  .header-right {
+    gap: 18px;
+  }
+
+  .header-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .lang-select {
+    font-size: 13px;
+  }
+
+  /* Nav bar adjustments */
+  .nav-bar ul {
+    gap: 30px;
+    padding: 12px 0;
+  }
+
+  .nav-bar li {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+
+  /* Top bar adjustments */
+  .topbar {
+    padding: 10px 14px;
+    height: 3rem;
+    flex-direction: row;
+  }
+
+  .topbar-left-group {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .topbar-left {
+    font-size: 16px;
+  }
+
+  .topbar-middle {
+    padding-left: 2rem;
+    font-size: 14px;
+  }
+
+  .hide-filter-link {
+    font-size: 12px;
+  }
+
+  .sort-trigger span {
+    font-size: 14px;
+  }
+
+  .sort-menu {
+    width: 170px;
+  }
+
+  .sort-option {
+    font-size: 13px;
+  }
+
+  /* Product grid ni 2 columns cheyyali */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    padding: 0.8rem;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+
+  .subtext {
+    font-size: 13px;
+  }
+
+  .heart-icon {
+    width: 19px;
+    height: 19px;
+  }
+}

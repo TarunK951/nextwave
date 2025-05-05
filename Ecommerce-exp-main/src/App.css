@@ -1,22 +1,27 @@
-.main {
-    margin: 0 auto;
-    padding: 0 6rem;
-  }
- 
-  .main-section {
-    display: flex;
-    flex-direction: row; 
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px; 
-    padding: 20px;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
-  .main-section > *:first-child {
-    flex: 0 0 250px; 
-  }
-  
-  .main-section > *:last-child {
-    flex: 1; 
-  }
-  
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  margin: 0 auto;
+  padding: 0 6rem;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.main-section > *:first-child {
+  flex: 0 0 250px;
+}
+
+.main-section > *:last-child {
+  flex: 1;
+}

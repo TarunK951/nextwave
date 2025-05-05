@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import heartOutline from "../assets/heart.png";
 import heartFilled from "../assets/heartfilled.svg";
 import "./ProductGrid.css";
+import "./mobile.css";
 
 const ProductGrid = ({ selectedCategories, selectedSort }) => {
   const [products, setProducts] = useState([]);
