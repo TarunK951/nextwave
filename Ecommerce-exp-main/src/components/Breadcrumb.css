@@ -1,0 +1,28 @@
+.breadcrumb-mobile {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .breadcrumb-mobile {
+      display: flex;
+      padding: 10px 20px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #333;
+      gap: 5px;
+    }
+  
+    .breadcrumb-home {
+      color: #bbb;
+    }
+  
+    .breadcrumb-shop {
+      font-weight: bold;
+      color: #000;
+    }
+  
+    .breadcrumb-separator {
+      color: #ccc;
+    }
+  }
+  

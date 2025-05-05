@@ -1,0 +1,157 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 79px;
+    padding-left:128px;
+
+    font-family: 'Arial', sans-serif;
+  }
+  .footer-top{
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .newsletter h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+
+  }
+  
+  .newsletter p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 49px;
+  }
+  
+  .newsletter-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 500px;
+    margin-bottom: 72px;
+  }
+  
+  .newsletter-input input {
+    flex: 1;
+
+    border: none;
+    height: 47px;
+    width: 384px;
+    font-size: 0.9rem;
+  }
+  
+  .newsletter-input button {
+    background-color: black ;
+    border-radius: 4px;
+    color: #222 ;
+    width:184px;
+    height: 48px;
+    font-size: 18px;
+  
+    border: 1px solid #222;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .footer-divider {
+    border-top: 1px solid #444;
+    margin: 30px 0;
+  }
+  
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    padding-right: 128px;
+    min-width: 180px;
+  }
+  
+  .contact-info h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin-top: 0px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin: 16px 0;
+    font-size:18px;
+    font-weight: 100;
+    cursor: pointer;
+  }
+  
+  .contact-info p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    margin-top: 0px;
+  }
+  .currency-info h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin-top: 24px;
+  }
+  .currency-info p{
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .currency-icon{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 24px;
+    width:72px;
+    margin-bottom: 16px;
+  } 
+  .social-icons i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .payment-icons img {
+    height: 30px;
+    margin: 5px;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #ccc;
+  }
+  .footer-column h4{
+    font-size: 24.71px;
+    font-weight: 700;
+    margin-bottom: 18px;
+
+  }
+  .pay-img{
+    height: 35px;
+    width: 56px;
+    border-radius: 4px;
+    border: 1px solid white;
+    background-color: #fff;
+  }
+  .amex{
+    height: 35px;
+    width: 56px;
+    background-color: blue;
+    border-radius: 4px;
+    border: 1px solid white;
+    
+  }
+  

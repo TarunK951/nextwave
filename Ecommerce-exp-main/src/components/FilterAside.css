@@ -1,0 +1,79 @@
+.filter-aside {
+    width: 300px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #222;
+    
+    padding: 10px 0;
+  }
+  
+  .filter-checkbox {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .filter-checkbox label{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .filter-checkbox input{
+    width:22px;
+    height:22px;
+  }
+  
+  .filter-section {
+    border-top: 1px solid #eee;
+    padding: 1.5rem 15px;
+    height: auto;
+   
+  }
+  
+  .filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+  }
+  
+  .filter-label {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+  }
+  
+  .filter-subtext {
+    font-size: 18px;
+    color: #252020;
+    margin-top: 2px;
+    font-weight: 400;
+  }
+  
+  .chevron {
+    display: flex;
+    align-items: center;
+    color: #666;
+  }
+  
+  .filter-options {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .filter-options label{
+    font-size: 16px;
+    color: #252020;
+  }
+  .filter-options input{
+    width:18px;
+    height: 18px;
+  }
+  .unselect-link {
+    font-size: 16px;
+    color: #BFC8CD;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
